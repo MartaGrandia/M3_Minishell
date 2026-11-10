@@ -75,3 +75,22 @@ brew install readline
 
 # Ubuntu / Debian
 sudo apt-get install libreadline-dev
+
+# Clone the repository
+git clone [https://github.com/your-username/minishell.git](https://github.com/your-username/minishell.git)
+cd minishell
+
+# Compile binary
+make
+
+# Launch Minishell
+./minishell
+
+minishell$ export MY_VAR=Hello
+minishell$ echo "$MY_VAR World" | cat -e
+Hello World$minishell$ grep -i "main" < main.c | wc -l > output.txt
+minishell$ cat output.txt
+       4
+minishell$ echo "Exit code check:" $?
+Exit code check: 0
+
